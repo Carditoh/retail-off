@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+	<ion-buttons slot="start">
+      <ion-back-button text="Volver" defaultHref="/logeado"></ion-back-button>
+    </ion-buttons>
+    <ion-title>envios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input [(ngModel)]="tipo" placeholder="Ingrese el tipo de envio"></ion-input>
+  <ion-input [(ngModel)]="costo" placeholder="Ingrese su costo"></ion-input>
+  <ion-button (click)="postEnvio()">Agregar</ion-button>
+</ion-content>

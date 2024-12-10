@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="presionarMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home']" routerLinkActive="router-link-active">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-menu side="start" menuId="menu" contentId="main">
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/escaneo">
+          <ion-icon name="information-circle"></ion-icon>
+          SCAN
+        </ion-item>
+        <ion-item routerLink="/historial">
+          <ion-icon name="information-circle"></ion-icon>
+          Historial
+        </ion-item>
+		<ion-item routerLink="/clientes">
+          <ion-icon name="people-outline"></ion-icon>
+          Cliente
+        </ion-item>
+        <ion-item routerLink="/productos">
+          <ion-icon name="cube-outline"></ion-icon>
+          Producto
+        </ion-item>
+        <ion-item routerLink="/envios">
+          <ion-icon name="cart-outline"></ion-icon>
+          Envío
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-content>

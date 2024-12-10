@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+	<ion-buttons slot="start">
+      <ion-back-button text="Volver" defaultHref="/logeado"></ion-back-button>
+    </ion-buttons>
+    <ion-title>productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input [(ngModel)]="nombre" placeholder="Ingrese nombre"></ion-input>
+  <ion-input [(ngModel)]="valor" placeholder="Ingrese precio"></ion-input>
+  <ion-input [(ngModel)]="descripcion" placeholder="Ingrese descripcion"></ion-input>
+  <ion-button (click)="postProducto()">Agregar</ion-button>
+</ion-content>

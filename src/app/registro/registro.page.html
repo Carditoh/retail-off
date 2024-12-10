@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <table>
+    <tr>
+      <td><ion-input [(ngModel)]="username" placeholder="ingrese su correo electrónico"></ion-input><td>
+    </tr>
+    <tr>
+      <td><ion-input [(ngModel)]="password" placeholder="ingrese su contraseña" type="password"></ion-input><td>
+    </tr>
+    <tr>
+      <td><ion-button (click)="registrar($event)">Registrar</ion-button><td>
+    </tr>
+  </table>
+</ion-content>
+
